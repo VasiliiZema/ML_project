@@ -9,6 +9,10 @@ app = FastAPI()
 
 classifier = pipeline(model="Helsinki-NLP/opus-mt-ru-en")
 
+@app.get("/")
+def welcome():
+    return "Приветствую Тебя в API обученной модели по переводу русского языка на английский!"
+
 # @app.get("/predict/")
 # def predict():
 #     return (f"Перевод на английский язык: {classifier('Привет, как дела Василий?')[0]['translation_text']}")
