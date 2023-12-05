@@ -1,3 +1,4 @@
 transformers
 pydantic
 streamlit
+TensorFlow
