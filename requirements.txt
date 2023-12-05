@@ -2,3 +2,4 @@ transformers
 pydantic
 streamlit
 TensorFlow
+sentencepiece
