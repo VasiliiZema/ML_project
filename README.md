@@ -59,9 +59,10 @@ uvicorn Translator_ru_en_FastAPI:app
 curl -X 'POST' 'http://127.0.0.1:8000/predict/' -H 'Content-Type: application/json' -d '{"text": "Привет, Василий"}'
 ~~~
 
+***Установка необходимых пакетов***
+
 -Созданный файл requirements.txt содержит список всех библиотек, которые необходимо установить для работы API приложения машинного обучения. 
 
-***Установка необходимых пакетов***
 ~~~
 pip install -r requirements.txt
 ~~~
