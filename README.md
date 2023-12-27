@@ -40,6 +40,14 @@ ___
 
 -Разработано Web-приложение на основе библиотеки Streamlit -  https://streamlit.io, которое использует выбранную выше модель.
 
+***Установка необходимых пакетов:***
+
+-Созданный файл requirements.txt содержит список всех библиотек, которые необходимо установить для работы API приложения машинного обучения. 
+
+~~~
+pip install -r requirements.txt
+~~~
+
 ***Запуск приложения:*** 
 ~~~
 streamlit run ./WebTranslator_Streamlit.py
@@ -57,14 +65,6 @@ uvicorn Translator_ru_en_FastAPI:app
 -Для использования модели через API необходимо выполнить POST-запрос по соответствующему адресу, например:
 ~~~
 curl -X 'POST' 'http://127.0.0.1:8000/predict/' -H 'Content-Type: application/json' -d '{"text": "Привет, Василий"}'
-~~~
-
-***Установка необходимых пакетов***
-
--Созданный файл requirements.txt содержит список всех библиотек, которые необходимо установить для работы API приложения машинного обучения. 
-
-~~~
-pip install -r requirements.txt
 ~~~
 ___
 ### Этап №4 - Развертывание Web приложения в облаке Streamlit (Link_to_the_application_in_streamlit)
